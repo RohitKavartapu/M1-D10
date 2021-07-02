@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+
+        JS EXERCISES
+
+        21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such name, surname, email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    -->
+
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        #green {background-color:rgba(255,0,0,0.3);}
+        #yellow {background-color:rgba(0,255,0,0.3);}
+        #orange {background-color:rgba(192,192,192,0.3);}
+        #brown {background-color:rgba(255,0,255,0.3);}
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Website</h1>
+    <ol>
+        <li>About Me</li>
+        <li>Address</li>
+    </ol>
+    </head>
+
+    <body>
+
+        <hr>
+
+        <h2>Car Model Display</h2>
+
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Model</th>
+                <th>Horsepower</th>
+                <th colspan="2">Country</th>
+                <th>Price</th>
+
+            </tr>
+            <tr>
+                <td>McLaren</td>
+                <td>720S</td>
+                <td><a href="https://cdn.motor1.com/images/mgl/nKjlj/s1/2018-mclaren-570s-spider-review.jpg"><img id="green" src ="" alt="Click here to view McLaren 720S" width="400px" height="400px"></a></td>
+                <td>720hp</td>
+                <td rowspan="2">UK</td>
+                <td>€265,000</td>
+            </tr>
+            <tr>
+                <td>Bentley</td>
+                <td>Continental GT</td>
+                <td><a href="https://stimg.cardekho.com/images/carexteriorimages/630x420/Bentley/Continental/7775/1587039057669/front-left-side-47.jpg"><img id="yellow" src="" alt="Click here to view Bentley Continental GT" width="400px" height="400px"></a></td>
+                <td>550hp</td>
+                <td rowspan="2">UK</td>
+                <td>€204,472</td>
+            </tr>
+            <tr>
+                <td>Aston Martin</td>
+                <td>Roland Mendel</td>
+                <td><a href="https://amsc-prod-cd.azureedge.net/-/media/aston-martin/imported/am_604_rocket_ignition_fr341.png?mw=1980&rev=ac022853814c4d02b67bd1a79a3bf232&hash=7AB067DB98CC9359A4C5AD3BEBEB9B7A"><img id="orange" src="" alt="Click here to view Aston Martin Roland Mendel" width="400px" height="400px"></a></td>
+                <td>510 to 639hp</td>
+                <td rowspan="2">UK</td>
+                <td>€192,432</td>
+            </tr>
+            <tr>
+                <td>Rolls Royce</td>
+                <td>Cullinan</td>
+                <td><a href="https://i.ytimg.com/vi/ZYZ-gQ2djmQ/maxresdefault.jpg"><img id="brown" src="" alt="Click here to view Rolls Royce Cullican" width="400px" height="400px"></a></td>
+                <td>571 to 600hp</td>
+                <td rowspan="2">UK</td>
+                <td>€351,000</td>
+            </tr>
+        </table>
+
+        <div class="container">
+            <div class="row">
+                <p id="hidden">This is a paragraph</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>unordered list
+              <ol>
+                <li>ordered list</li>
+                <li>ordered list</li>
+                <li>ordered list</li>
+              </ol>
+            </li>
+            <li>unordered list</li>
+            <li>unordered list</li>
+          </ul>
+          <br><br>
+        <footer>
+            <p>NAME: Rohit Kavartapu<br>
+                <a href="mailto:kavartapur@gmail.com">kavartapur@gmail.com</a>
+            </p>
+        </footer>
+    </body>
+
+</html>

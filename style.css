@@ -1,0 +1,40 @@
+table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   border-style: solid;
+   border-radius: 8px;
+   border-width: thick;
+   width: 50%;
+   height: 50%;
+}
+
+td, th {
+   border: 1px solid black;
+   text-align: left;
+   padding: 8px;
+   height: 70px;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+   background-color: #dddddd;
+}
+
+ h1{
+   text-align: center;
+   color:cornflowerblue;
+} 
+
+body{
+   text-align: center;
+   background-color: lightgrey;
+   color: #704019;
+   max-width: 768px;
+   margin: 0 auto;
+   font-family: 'PT Sans', sans-serif;
+}
+
+#hidden{
+   visibility: hidden;
+}
